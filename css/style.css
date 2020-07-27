@@ -1,0 +1,464 @@
+/* CSS Document */
+	
+*{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+	font-family: "Josefin Sans SemiBold";
+    vertical-align: baseline;
+    background: transparent;
+	box-sizing: border-box;
+}
+
+html, body{
+    background-color: #000;
+    font-size: 19px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    width: 100%;
+    height: auto;
+	max-width: 1920px;
+}	
+html{
+	scroll-behavior: smooth;
+}
+
+/*navbar*/
+.navbar{
+	background-color: rgba(22,20,21,1.00) !important;
+}
+.navbar li a{
+	color: white !important;
+}
+.navbar li a:hover{
+	color: gold !important;
+}
+
+/*wrapper*/
+.wrapper{
+	width: 100%;
+	position: relative;
+    overflow: hidden;
+}
+
+/*content*/
+/*top*/
+.top{
+	width: 100%;
+    height: 780px;
+    position: relative;
+    overflow: hidden;
+}
+.top .title{
+	width: 550px;
+    height: 500px;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    margin-left: -280px;
+    z-index: 100;
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top .bg{
+	width: 100%;
+    height: 100%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.top .protag{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+.top .protag .markeloff{
+	width: 500px;
+    height: 110%;
+    background-image: url(../img/2390211_orig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+	animation-name: example;
+  	animation-duration: 2.5s;
+}
+@keyframes example {
+   50% {right: 0px;}
+   0% {left: 150px;}
+}
+.top .protag .s1mple{
+	width: 480px;
+    height: 110%;
+    background-image: url(../img/u_5ecfc47a0f028.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	animation-name: example-1;
+  	animation-duration: 2.5s;
+}
+@keyframes example-1 {
+   100% {right: 0px;}
+   0% {right: 150px;}
+}
+
+/*media query*/
+@media (max-width: 1200px){
+	.top .title{
+	width: 500px;
+    height: 450px;
+    position: absolute;
+    top: 100px;
+    left: 53%;
+    margin-left: -280px;
+    z-index: 100;
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top .protag .markeloff{
+	width: 400px;
+    height: 90%;
+    background-image: url(../img/2390211_orig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: -50px;	
+}
+.top .protag .s1mple{
+	width: 400px;
+    height: 90%;
+    background-image: url(../img/u_5ecfc47a0f028.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+}
+
+@media (max-width: 960px){
+
+	.top .title{
+	width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 120px;
+    left: 60%;
+    margin-left: -280px;
+    z-index: 100;
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top .protag .markeloff{
+	width: 370px;
+    height: 85%;
+    background-image: url(../img/2390211_orig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: -60px;	
+}
+.top .protag .s1mple{
+	width: 380px;
+    height: 85%;
+    background-image: url(../img/u_5ecfc47a0f028.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+
+}
+@media (max-width: 768px){
+	.top .title{
+	width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 120px;
+    left: 68%;
+    margin-left: -280px;
+    z-index: 100;
+    background-image: url(../img/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top .protag .markeloff{
+	width: 370px;
+    height: 85%;
+    background-image: url(../img/2390211_orig.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: -60px;	
+}
+.top .protag .s1mple{
+	width: 380px;
+    height: 85%;
+    background-image: url(../img/u_5ecfc47a0f028.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+
+	
+}
+
+
+/*twit and vote*/
+.bg_vote{
+	width: 100%;
+    background-color: #070707;
+    position: relative;
+}
+.vote{
+	width: 100%;
+    padding: 100px 0 12px 0;
+}
+.vote .topic{
+	width: 100%;
+    height: 200px;
+    background-image: url(../img/topic.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 15px;
+}
+.vote .twit_zone .txt{
+	font-size: 19px;
+    line-height: 33px;
+    margin-bottom: 50px;
+	text-align: center;
+	color: #d0cc7b;
+}
+.vote .twit_zone{
+	width: 616px;
+	height: 700px;
+    margin: 0 auto 96px;
+    position: relative;
+    z-index: 20;
+}
+.vote .twit_zone .tweet{
+	margin: -5px 0 48px 0;
+}
+.clearfix{
+	zoom: 1;
+}
+.vote .twit_zone .tweet .left{
+	width: 300px;
+    float: left;
+}
+.vote .twit_zone .tweet .right{
+	width: 300px;
+    float: right;
+}
+
+
+/*about*/
+.about{
+	background-color: #FFEAA3;
+	width: 100%;
+	height: 1250px;
+	position: relative;
+    padding-bottom: 1px;
+	backface-visibility: hidden;
+}
+.about .header-image{
+	display: block;
+    width: 100%;
+}
+.about .header-text{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px 160px;
+	text-align: center;
+}
+.about .content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.about p {
+    margin-bottom: 35px;
+}
+p {
+    margin: 0;
+}
+.format{
+	width: 100%;
+	height: 850px;
+	background-color: #FFFFFF;
+	
+}
+.format h2{
+	padding: 100px 0px 0px;
+}
+.format p {
+	width: 1000px;
+	margin: 0 auto;
+}
+.format img{
+	margin: 0 auto;
+}
+.schedule{
+	width: 100%;
+	height: 800px;
+	background-color: #FFFFFF;
+}
+.schedule h2{
+	padding: 100px 0px 0px;
+}
+.schedule img{
+	margin: 0 auto;
+}
+
+
+/*footer*/
+#footer {
+    width: 100%;
+    background-color: #101010;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+    z-index: 100;
+}
+#footer .logo {
+    width: 210px;
+    margin: 0 auto 35px;
+}
+
+#footer .logo a.l1 {
+    width: 120px;
+    float: left;
+    position: relative;
+    top: 3px;
+}
+#footer .logo a {
+    display: block;
+}
+a {
+    color: #d0cc7b;
+    text-decoration: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+#footer .logo img {
+    width: 100%;
+    height: auto;
+}
+img {
+    display: block;
+}
+#footer .logo a.l2 {
+    width: 60px;
+    float: right;
+	position: relative;
+	top: 30px;
+}
+#footer .logo a {
+    display: block;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#footer .share {
+    width: 90px;
+    margin: 0 auto 30px;
+	position: relative;
+	top: -20px;
+}
+#footer .share li.fb {
+    float: left;
+}
+li {
+    list-style-type: none;
+}
+#footer .share li.fb a {
+    background-image: url(../img/icn_fb.png);
+    background-size: 7px 16px;
+}
+#footer .share li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #FFCA00;
+    border-radius: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+#footer .share li.tw {
+    float: right;
+}
+#footer .share li {
+}
+li {
+    list-style-type: none;
+}
+#footer .share li.tw a {
+    background-image: url(../img/icn_tw.png);
+    background-size: 16px 13px;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#footer .attention {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+	transform: scale(0.9);
+}
+.forsp {
+    display: none;
+}
+#footer .attention span {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
